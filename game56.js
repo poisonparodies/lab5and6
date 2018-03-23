@@ -399,8 +399,8 @@ Player.prototype.moveX = function(step, level, keys) {
     this.pos = newPos;
 };
 
-var gravity = 27;
-var jumpSpeed = 16;
+var gravity = 35;
+var jumpSpeed = 20;
 
 Player.prototype.moveY = function(step, level, keys) {
   // Accelerate player downward (always)
