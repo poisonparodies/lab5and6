@@ -435,10 +435,10 @@ Player.prototype.act = function(step, level, keys) {
   if (otherActor)
     level.playerTouched(otherActor.type, otherActor);
 
-  // Losing animation
+  // melted animation. 
   if (level.status == "lost") {
-    this.pos.y += step;
-    this.size.y -= step;
+    this.pos.y = this.pos.y + (step * 2);
+    this.size.y = this.size.y - (step * 2);
   }
 };
 
